@@ -79,6 +79,29 @@ Start SwitchFlix. The servers appear in the sidebar. Each file is read once, the
 | `/switch/SwitchFlix/Music/` | default music folder |
 | `/switch/SwitchFlix/switchflix.log` | log of the last run (the run before is `switchflix.prev.log`) |
 
+## Server Compatibility:
+
+- **Emby servers (emby://, embys://):** Home rows, libraries, genres, search, playback with a resolution choice, audio language pick. A passwordless account signs in by itself. Jellyfin looks the same but is untested, so it may only partly work.
+- **Ovoo movie portals (flix://, for example PlayTimeBD):** lists, genre/country/language/rating filters, detail pages, seasons and episodes, search. Streams are HLS, with subtitles from the site when it lists any. The site must answer on plain http. You can edit the site's settings in a profile file on the SD card.
+- **Movie hub portals (hub://, hubs://, for example flixhub):** lists, genre and sort, detail, series with episodes, search. Video is a plain file, over http or https. For https the app uses its local helper. Today the page markers for this kind are built into the app and fit flixhub. Making them profile-driven is the work in progress.
+- **Directory indexes (http://, https://):** Apache, nginx, h5ai. You can browse folders and play files, and the app builds a search index of them.
+- **WebDAV (webdav://, webdavs://).**
+- **FTP and SFTP (ftp://, sftp://):** the app can open them, but the tool doesn't check them.
+- **Local and USB storage,** including rename, copy, move and delete, and music folders.
+
+## What the Server Tool recognises and tests
+
+Emby API server, Ovoo movie portal, movie hub portal, WebDAV, directory index.
+A server counts as ready only when a video opens.
+Anything else goes to the problem report.
+
+## What does not work
+
+Sites that need a login, build their pages only with scripts, or hide the video: the tool and the app can't read them.
+HLS streams over https: the player has no TLS support. Direct video files over https only work for hub sites, through the helper.
+Plex, Xtream or IPTV portals, Kodi, Stremio: not supported.
+
+
 ## Problems?
 
 - **The app closes by itself:** reopen it with title takeover. Send `switchflix.log` and `switchflix.prev.log` with your report. If the console shows a crash report, send the newest file from `/atmosphere/crash_reports/`.
