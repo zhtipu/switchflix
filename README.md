@@ -43,7 +43,7 @@ Tap the SwitchFlix icon on the home screen. The forwarder starts the app from th
 
 ## Add your servers
 
-1. Download **SwitchFlix-Server-Tool.zip** from the GitHub release.
+1. Download [**SwitchFlix-Server-Tool.zip**](https://github.com/zhtipu/SwitchFlix-Server-Tool/releases) from the GitHub release.
 2. Right-click it and choose **Extract All**, and put the folder anywhere (for example, your Desktop).
 3. Open the folder and double-click **SwitchFlix-Server-Tool.exe**.
 4. If Windows warns about an unknown program, click **More info**, then **Run anyway**.
