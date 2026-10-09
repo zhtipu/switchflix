@@ -24,11 +24,22 @@ plus the storage on your Switch itself.
 
 ## Install
 
-1. Download `SwitchFlix.nro` from the [latest release](https://github.com/zhtipu/switchflix/releases/latest).
-2. Copy it to `/switch/SwitchFlix/` on your SD card.
-3. Install SwitchFlix.nsp via DBI or Awoo Installer
-4. Open **SwitchFlix** from home screen.
-   (Alternatively) Open it from the Homebrew Menu. Use **title takeover** (hold R when launching a game), not the album applet, so the app has enough memory.
+**Step A. Install the forwarder (once)**
+
+1. Put the .nsp file on the SD card, or on a USB stick.
+2. On the Switch, open your install tool (for example DBI or Tinfoil).
+3. Choose the .nsp file and press Install.
+4. When it finishes, a SwitchFlix icon appears on the Switch's home screen. You can delete the .nsp file now.
+
+**Step B. Put the app file on the SD card**
+
+1. Turn the Switch off and put the SD card in a computer.
+2. Open the folder switch, then make a new folder inside it called SwitchFlix.
+3. Put SwitchFlix.nro in that folder.
+4. Put the SD card back in the Switch.
+
+**Step C. Open it**
+Tap the SwitchFlix icon on the home screen. The forwarder starts the app from the folder you made in step B.
 
 ## Add your servers
 
