@@ -63,7 +63,8 @@ Keep the exe next to the `_internal` folder. It won't work without it.
 /switch/SwitchFlix/servers/
 ```
 
-**Alternatively,**
+## Alternatively,
+
 8. Put your Switch's SD card in the computer. Press **Write to SD card** and choose the SD card itself (the drive, not a folder).
 9. Put the card back in the Switch and open SwitchFlix. The server appears on the left side.
 
