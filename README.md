@@ -43,12 +43,30 @@ Tap the SwitchFlix icon on the home screen. The forwarder starts the app from th
 
 ## Add your servers
 
-**Easy way: a server file.** Someone who runs or knows your servers can give you a small `.json` file
-(the SwitchFlix Server Tool makes them). Put it here:
+1. Download **SwitchFlix-Server-Tool.zip** from the GitHub release.
+2. Right-click it and choose **Extract All**, and put the folder anywhere (for example, your Desktop).
+3. Open the folder and double-click **SwitchFlix-Server-Tool.exe**.
+4. If Windows warns about an unknown program, click **More info**, then **Run anyway**.
 
+Keep the exe next to the `_internal` folder. It won't work without it.
+
+## Add a server
+1. Type the server address in the box on the left. Use the web address your provider gave you, for example `http://movies.example.com`.
+2. Only if the server asks for a user name and password, type them in. Otherwise leave those boxes empty.
+3. Press **Analyze** and wait a few seconds.
+4. Read the result on the right:
+   - **Ready for SwitchFlix** means a video really opened. You can go on.
+   - **Not usable yet** means the tool could not reach a video. Go to "If it says not ready" below.
+5. Type a name you like in **Server name in the app**.
+6. Press **Save server file** and save `.json` file and Put it here:
 ```
 /switch/SwitchFlix/servers/
 ```
+
+**Alternatively,**
+8. Put your Switch's SD card in the computer. Press **Write to SD card** and choose the SD card itself (the drive, not a folder).
+9. Put the card back in the Switch and open SwitchFlix. The server appears on the left side.
+
 
 Start SwitchFlix. The servers appear in the sidebar. Each file is read once, then renamed to `.json.done`.
 
