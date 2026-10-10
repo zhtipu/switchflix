@@ -24,6 +24,8 @@ plus the storage on your Switch itself.
 
 ## Install
 
+https://www.youtube.com/watch?v=y3OAwLhnLjM
+
 **Step A. Install the forwarder (once)**
 
 1. Put the .nsp file on the SD card, or on a USB stick.
@@ -42,6 +44,8 @@ plus the storage on your Switch itself.
 Tap the SwitchFlix icon on the home screen. The forwarder starts the app from the folder you made in step B.
 
 ## Add your servers
+
+https://www.youtube.com/watch?v=7CaLQLsBDVk
 
 1. Download [**SwitchFlix-Server-Tool.zip**](https://github.com/zhtipu/SwitchFlix-Server-Tool/releases) from the GitHub release.
 2. Right-click it and choose **Extract All**, and put the folder anywhere (for example, your Desktop).
@@ -120,6 +124,8 @@ Start SwitchFlix. The servers appear in the sidebar. Each file is read once, the
 - **Local and USB storage,** including rename, copy, move and delete, and music folders.
 
 ## What the Server Tool recognises and tests
+
+https://www.youtube.com/watch?v=7vKUzSv2Cm4
 
 Emby API server, Ovoo movie portal, movie hub portal, WebDAV, directory index.
 A server counts as ready only when a video opens.
